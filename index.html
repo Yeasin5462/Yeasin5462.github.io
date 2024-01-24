@@ -5,54 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Jimenez Holdings - Car Dealership</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-700 text-white p-5 text-center">
-        <h1 class="text-3xl">Mr. Jimenez Holdings - Your Dream Cars Await</h1>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 text-center">
+        <h1 class="text-3xl font-bold">Mr. Jimenez Holdings</h1>
+        <p class="text-lg">Premium Car Dealership</p>
     </header>
-    
-    <section class="container mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-5">Featured Cars</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Car Cards -->
-            <!-- Repeat this block for each car -->
-            <div class="bg-white p-4 rounded-lg shadow">
-                <img src="https://placehold.co/300x200" alt="Car Image - Description of the car" class="w-full h-64 object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-bold">Car Model Name</h3>
-                <p class="text-sm text-gray-600 mt-2">Brief description of the car.</p>
-                <div class="mt-4">
-                    <span class="text-lg font-bold">$Price</span>
-                    <button onclick="openCarModal('Car Model Name', 'Full description of the car.')" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 ml-3">View More</button>
-                </div>
-            </div>
-            <!-- End of Car Card -->
-        </div>
-    </section>
 
-    <section class="bg-gray-200 py-6">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-6">Pricing Plans</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Pricing Plan Cards -->
-                <!-- Repeat this block for each pricing plan -->
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <h3 class="text-lg font-bold">Plan Name</h3>
-                    <p class="text-sm text-gray-600 mt-2">Details of the plan.</p>
-                    <span class="text-lg font-bold block mt-4">$Plan Price</span>
-                    <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-3">Choose Plan</button>
-                </div>
-                <!-- End of Pricing Plan Card -->
+    <section class="p-4">
+        <h2 class="text-2xl font-bold text-center mb-6">Featured Cars</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Car 1 -->
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="https://placehold.co/600x400" alt="Placeholder image of a sleek sedan" class="rounded">
+                <h3 class="text-xl font-bold mt-2">Sleek Sedan</h3>
+                <p class="text-gray-600">A comfortable and efficient sedan, perfect for city driving.</p>
+                <p class="text-lg font-bold mt-2">$30,000</p>
+            </div>
+            <!-- Car 2 -->
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="https://placehold.co/600x400" alt="Placeholder image of a luxury SUV" class="rounded">
+                <h3 class="text-xl font-bold mt-2">Luxury SUV</h3>
+                <p class="text-gray-600">Spacious and powerful SUV for a stylish, comfortable ride.</p>
+                <p class="text-lg font-bold mt-2">$50,000</p>
+            </div>
+            <!-- Car 3 -->
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="https://placehold.co/600x400" alt="Placeholder image of a sports car" class="rounded">
+                <h3 class="text-xl font-bold mt-2">Sports Car</h3>
+                <p class="text-gray-600">Experience thrilling performance and exquisite design.</p>
+                <p class="text-lg font-bold mt-2">$70,000</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-blue-700 text-white text-center p-4">
+    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
         <p>&copy; 2024 Mr. Jimenez Holdings. All rights reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
-
 
