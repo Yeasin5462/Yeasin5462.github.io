@@ -3,74 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Dealership</title>
+    <title>Deluxe Car Dealership</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom Styles */
+        .car-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
+<body class="bg-gray-100">
     <!-- Header -->
     <header class="bg-blue-600 text-white p-4 text-center">
-        <h1 class="text-3xl">Welcome to Our Car Dealership</h1>
+        <h1 class="text-3xl font-bold">Deluxe Car Dealership</h1>
     </header>
 
-    <!-- Car Showcase Section -->
-    <section class="py-8 px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- Car Showcase -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-6">Featured Cars</h2>
+        <div class="grid md:grid-cols-3 gap-6">
             <!-- Car 1 -->
-            <div class="car-card" onclick="openCarModal('Car 1', 'This is a description for Car 1.')">
-                <img src="https://placehold.co/300x200" alt="Car 1 Image" class="w-full">
-                <h2 class="text-xl font-bold mt-2">Car 1</h2>
-                <p>$20,000</p>
+            <div class="car-card bg-white rounded-lg p-4">
+                <img src="https://placehold.co/300x200" alt="Red Sports Car" class="mb-3">
+                <h3 class="font-semibold text-lg">Red Sports Car</h3>
+                <p class="text-gray-600">$60,000</p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded mt-3">Buy Now</button>
             </div>
             <!-- Car 2 -->
-            <div class="car-card" onclick="openCarModal('Car 2', 'This is a description for Car 2.')">
-                <img src="https://placehold.co/300x200" alt="Car 2 Image" class="w-full">
-                <h2 class="text-xl font-bold mt-2">Car 2</h2>
-                <p>$30,000</p>
+            <div class="car-card bg-white rounded-lg p-4">
+                <img src="https://placehold.co/300x200" alt="Luxury Sedan" class="mb-3">
+                <h3 class="font-semibold text-lg">Luxury Sedan</h3>
+                <p class="text-gray-600">$45,000</p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded mt-3">Buy Now</button>
             </div>
             <!-- Car 3 -->
-            <div class="car-card" onclick="openCarModal('Car 3', 'This is a description for Car 3.')">
-                <img src="https://placehold.co/300x200" alt="Car 3 Image" class="w-full">
-                <h2 class="text-xl font-bold mt-2">Car 3</h2>
-                <p>$40,000</p>
+            <div class="car-card bg-white rounded-lg p-4">
+                <img src="https://placehold.co/300x200" alt="Family SUV" class="mb-3">
+                <h3 class="font-semibold text-lg">Family SUV</h3>
+                <p class="text-gray-600">$50,000</p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded mt-3">Buy Now</button>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Plans Section -->
-    <section class="bg-white py-8 px-4">
-        <h2 class="text-2xl text-center font-bold mb-6">Pricing Plans</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Plan 1 -->
-            <div class="plan-card">
-                <h3 class="text-xl font-bold">Basic Plan</h3>
-                <p>$500/month</p>
-                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Choose Plan</button>
-            </div>
-            <!-- Plan 2 -->
-            <div class="plan-card">
-                <h3 class="text-xl font-bold">Premium Plan</h3>
-                <p>$1000/month</p>
-                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Choose Plan</button>
-            </div>
-            <!-- Plan 3 -->
-            <div class="plan-card">
-                <h3 class="text-xl font-bold">Ultimate Plan</h3>
-                <p>$1500/month</p>
-                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Choose Plan</button>
+    <!-- Pricing Plans -->
+    <section class="bg-gray-200 py-6">
+        <div class="container mx-auto p-6 text-center">
+            <h2 class="text-2xl font-bold mb-6">Pricing Plans</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Plan 1 -->
+                <div class="bg-white p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg">Basic</h3>
+                    <p class="text-gray-600">Ideal for single car purchase</p>
+                    <p class="text-3xl font-bold my-4">$25,000</p>
+                    <ul class="text-left mb-4">
+                        <li>- Basic maintenance</li>
+                        <li>- 1-year warranty</li>
+                        <li>- Standard support</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
+                <!-- Plan 2 -->
+                <div class="bg-white p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg">Premium</h3>
+                    <p class="text-gray-600">Perfect for luxury cars</p>
+                    <p class="text-3xl font-bold my-4">$50,000</p>
+                    <ul class="text-left mb-4">
+                        <li>- Extended maintenance</li>
+                        <li>- 3-year warranty</li>
+                        <li>- Priority support</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
+                <!-- Plan 3 -->
+                <div class="bg-white p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg">Enterprise</h3>
+                    <p class="text-gray-600">For fleet purchases</p>
+                    <p class="text-3xl font-bold my-4">$100,000</p>
+                    <ul class="text-left mb-4">
+                        <li>- Fleet maintenance</li>
+                        <li>- 5-year warranty</li>
+                        <li>- 24/7 support</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-blue-600 text-white text-center p-4">
-        <p>&copy; 2024 Car Dealership. All rights reserved.</p>
+        <p>&copy; 2024 Deluxe Car Dealership. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // JavaScript logic can be added here, if needed
+    </script>
 </body>
 </html>
-
-
+       
